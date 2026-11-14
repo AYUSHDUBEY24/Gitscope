@@ -35,6 +35,9 @@ def _load() -> tuple[Tenant | None, dict | None]:
         {"github.login": {"$regex": f"^{re.escape(DEMO_GITHUB_LOGIN)}$", "$options": "i"}}
     )
     tenant = tenant_for(user) if user else None
+    print("DEBUG DEMO LOGIN:", DEMO_GITHUB_LOGIN)
+    print("DEBUG USER FOUND:", user is not None)
+    print("DEBUG TENANT CREATED:", tenant is not None)
     if tenant is None:
         return None, None
 
