@@ -28,16 +28,21 @@ _cache: tuple[float, Tenant | None, dict | None] = (0.0, None, None)
 
 
 def _load() -> tuple[Tenant | None, dict | None]:
+    print("DEBUG LOAD STARTED - LOGIN:", repr(DEMO_GITHUB_LOGIN), flush=True)
+
     if not DEMO_GITHUB_LOGIN:
         return None, None
+
     db = database.get_db()
     user = db["users"].find_one(
         {"github.login": {"$regex": f"^{re.escape(DEMO_GITHUB_LOGIN)}$", "$options": "i"}}
     )
     tenant = tenant_for(user) if user else None
-    print("DEBUG DEMO LOGIN:", DEMO_GITHUB_LOGIN)
-    print("DEBUG USER FOUND:", user is not None)
-    print("DEBUG TENANT CREATED:", tenant is not None)
+
+    print("DEBUG DEMO LOGIN:", DEMO_GITHUB_LOGIN, flush=True)
+    print("DEBUG USER FOUND:", user is not None, flush=True)
+    print("DEBUG TENANT CREATED:", tenant is not None, flush=True)
+
     if tenant is None:
         return None, None
 
