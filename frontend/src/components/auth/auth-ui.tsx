@@ -46,11 +46,11 @@ export function AuthShell({
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
         className="w-full max-w-[400px]"
       >
-        <Link href="/" className="mb-8 flex items-center justify-center gap-2.5" aria-label="GitPulse home">
+        <Link href="/" className="mb-8 flex items-center justify-center gap-2.5" aria-label="GitScope home">
           <span className="flex size-9 items-center justify-center rounded-lg bg-[linear-gradient(135deg,#6366f1,#4f46e5)] shadow-[0_4px_16px_-4px_rgba(79,70,229,0.9)]">
             <Activity className="size-4.5 text-white" strokeWidth={2.5} />
           </span>
-          <span className="text-base font-semibold tracking-tight text-ink">GitPulse</span>
+          <span className="text-base font-semibold tracking-tight text-ink">GitScope</span>
         </Link>
 
         <Panel className="p-6 sm:p-8">

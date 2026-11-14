@@ -12,7 +12,7 @@
 services:
   api:
     build: ./backend
-    container_name: gitpulse-api
+    container_name: gitscope-api
     # GITHUB_TOKEN, MONGODB_URI, DB_NAME, SYNC_INTERVAL_MINUTES all come from here.
     env_file: ./backend/.env
     ports:
@@ -35,11 +35,13 @@ services:
     build:
       context: ./frontend
       args:
-        # The browser calls the API directly from your machine, so this is
-        # localhost — not the `api` service name, which only resolves inside
-        # Docker's network and would fail in the browser.
         NEXT_PUBLIC_API_BASE: http://localhost:8000
-    container_name: gitpulse-web
+        NEXT_PUBLIC_FIREBASE_API_KEY: ${NEXT_PUBLIC_FIREBASE_API_KEY}
+        NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN: ${NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN}
+        NEXT_PUBLIC_FIREBASE_PROJECT_ID: ${NEXT_PUBLIC_FIREBASE_PROJECT_ID}
+        NEXT_PUBLIC_FIREBASE_APP_ID: ${NEXT_PUBLIC_FIREBASE_APP_ID}
+        NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID: ${NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID}
+    container_name: gitscope-web
     ports:
       - "3000:3000"
     restart: unless-stopped

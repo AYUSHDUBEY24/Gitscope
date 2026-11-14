@@ -47,10 +47,10 @@ export default function LoginPage() {
   return (
     <AuthShell
       title="Welcome back"
-      subtitle="Sign in to your GitPulse dashboard."
+      subtitle="Sign in to your GitScope dashboard."
       footer={
         <>
-          New to GitPulse? <TextLink href={`/signup${nextQs}`}>Create an account</TextLink>
+          New to GitScope? <TextLink href={`/signup${nextQs}`}>Create an account</TextLink>
         </>
       }
     >

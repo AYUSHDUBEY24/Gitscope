@@ -114,7 +114,7 @@ export function RequestAccessDialog({ children }: { children: ReactNode }) {
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent
         title="Request access"
-        description="GitPulse is invite-only for now. Leave your email and a short note, and you'll hear back."
+        description="GitScope is invite-only for now. Leave your email and a short note, and you'll hear back."
       >
         <div className="px-6 py-5">
           {/* Remount on each open so a finished request doesn't stick around. */}

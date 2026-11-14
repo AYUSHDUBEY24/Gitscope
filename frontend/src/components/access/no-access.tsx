@@ -60,7 +60,7 @@ export function NoAccess() {
 
   return (
     <AuthShell
-      title="GitPulse is invite-only"
+      title="GitScope is invite-only"
       subtitle={
         request === "rejected"
           ? "Your earlier request wasn't approved. You're welcome to send a new one."

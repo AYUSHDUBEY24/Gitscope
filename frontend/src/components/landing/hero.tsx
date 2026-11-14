@@ -22,12 +22,12 @@ const ease = [0.16, 1, 0.3, 1] as const;
  * Word-by-word rise. Cheap (transform + opacity only) and it sets the tone.
  *
  * The claim lands on the second line, so that's the one wearing the brand
- * gradient — the eye finishes on "GitPulse doesn't."
+ * gradient — the eye finishes on "GitScope doesn't."
  */
 function Headline() {
   const lines: { words: string[]; className: string }[] = [
     { words: ["GitHub", "forgets."], className: "text-gradient" },
-    { words: ["GitPulse", "doesn't."], className: "text-gradient-brand" },
+    { words: ["GitScope", "doesn't."], className: "text-gradient-brand" },
   ];
 
   let i = 0;
@@ -145,7 +145,7 @@ export function Hero() {
           >
             See <span className="text-ink-2">who followed you, who left, and when</span> —
             all on one dashboard. GitHub keeps only{" "}
-            <span className="text-ink-2">14 days</span> of repository traffic; GitPulse
+            <span className="text-ink-2">14 days</span> of repository traffic; GitScope
             records views and clones <span className="text-ink-2">every day</span> and
             builds the full history it never gave you. Next up:{" "}
             <span className="text-ink">AI that reads your repos and writes the analysis.</span>
@@ -177,7 +177,7 @@ export function Hero() {
               href="https://github.com/KalyanM45"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitPulse on GitHub"
+              aria-label="GitScope on GitHub"
               className="flex size-12 items-center justify-center rounded-control text-ink-3 transition hover:bg-glass hover:text-ink"
             >
               <Github className="size-5" />

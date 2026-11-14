@@ -42,7 +42,7 @@ export function DemoBanner() {
         )}
         <div className="text-[13px] leading-relaxed">
           <p className="font-medium text-ink">
-            Live demo{info?.login ? <> · @{info.login}&apos;s GitPulse</> : null}
+            Live demo{info?.login ? <> · @{info.login}&apos;s GitScope</> : null}
           </p>
           <p className="text-ink-3">
             {info && !info.available

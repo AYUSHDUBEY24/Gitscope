@@ -14,13 +14,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://gitpulse.vercel.app"),
   title: {
-    default: "GitPulse — GitHub forgets. GitPulse doesn't.",
-    template: "%s · GitPulse",
+    default: "GitScope — GitHub forgets. GitScope doesn't.",
+    template: "%s · GitScope",
   },
   description:
-    "See who followed you, who left, and when — on one dashboard. GitHub keeps only 14 days of repository traffic; GitPulse records views and clones every day and builds the full history it never gave you.",
+    "See who followed you, who left, and when — on one dashboard. GitHub keeps only 14 days of repository traffic; GitScope records views and clones every day and builds the full history it never gave you.",
   openGraph: {
-    title: "GitPulse — GitHub forgets. GitPulse doesn't.",
+    title: "GitScope — GitHub forgets. GitScope doesn't.",
     description:
       "Audience tracking, daily repository traffic recording, and AI repo analysis. Followers keyed on immutable user ids, so a rename is never counted as a loss.",
     type: "website",

@@ -103,7 +103,7 @@ export default function ConnectPage() {
     return (
       <AuthShell
         title={gh?.needs_reconnect ? "Reconnect GitHub" : "Connect your GitHub"}
-        subtitle="GitPulse reads your GitHub account to build your dashboard: followers, repositories, traffic and contributions."
+        subtitle="GitScope reads your GitHub account to build your dashboard: followers, repositories, traffic and contributions."
         footer={
           <>
             Signed in as {appUser.email} ·{" "}
@@ -126,7 +126,7 @@ export default function ConnectPage() {
             </li>
             <li className="flex gap-3">
               <ShieldCheck className="mt-0.5 size-4 shrink-0 text-indigo-lift" />
-              <span>GitPulse never changes anything on your GitHub account.</span>
+              <span>GitScope never changes anything on your GitHub account.</span>
             </li>
             <li className="flex gap-3">
               <Lock className="mt-0.5 size-4 shrink-0 text-indigo-lift" />

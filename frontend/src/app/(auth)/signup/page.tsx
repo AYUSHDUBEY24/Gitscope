@@ -53,7 +53,7 @@ export default function SignupPage() {
   return (
     <AuthShell
       title="Create your account"
-      subtitle="GitPulse is invite-only: invited emails get their own dashboard, and anyone can request access. We'll email you a link to confirm your address."
+      subtitle="GitScope is invite-only: invited emails get their own dashboard, and anyone can request access. We'll email you a link to confirm your address."
       footer={
         <>
           Already have an account? <TextLink href={`/login${nextQs}`}>Sign in</TextLink>

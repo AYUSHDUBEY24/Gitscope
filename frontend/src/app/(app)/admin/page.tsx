@@ -23,7 +23,7 @@ export default function AdminPage() {
       <EmptyState
         icon={<ShieldCheck className="size-6" />}
         title="Admins only"
-        description="This page is for managing who can use GitPulse."
+        description="This page is for managing who can use GitScope."
       />
     );
   }
@@ -32,7 +32,7 @@ export default function AdminPage() {
     <div className="space-y-8">
       <PageHeading
         title="Access"
-        description="GitPulse is invite-only. Approve requests, invite people directly, or remove access."
+        description="GitScope is invite-only. Approve requests, invite people directly, or remove access."
       />
       <Requests />
       <Members />
@@ -186,7 +186,7 @@ function Members() {
     <Panel>
       <PanelHeader
         title="Members"
-        description="Everyone who can use GitPulse. Removing someone takes effect immediately."
+        description="Everyone who can use GitScope. Removing someone takes effect immediately."
       />
       <div className="space-y-4 px-6 pb-6">
         <form onSubmit={submit} className="flex flex-col gap-2 sm:flex-row">
