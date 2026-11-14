@@ -31,7 +31,7 @@ jobs:
 
       - name: Run backend tests
         working-directory: backend
-        run: pytest -v
+        run: python -m pytest -v
 
   frontend-build:
     name: Frontend Type Check and Build
